@@ -56,8 +56,9 @@
                 especially towards the needy or suffering:Also aid given to those in need. How to use charity in a sentence.
               </p>
               <div class="mt-4">
-              <button class="btn text-warning firstBtn">DONATE <i class="fa fa-arrow-right"></i></button>
-              <button class="btn text-dark secondBtn">VOLUNTEER</button></div>
+              <button class="btn text-warning firstBtn">DONATE <span><img class="pl-3"
+                                                    src="@/assets/arrow3.png" alt="donate arrow"></span></button>
+              <router-link to="/volunteer" class="btn text-dark secondBtn">VOLUNTEER</router-link></div>
             </div>
             <div class="col-md-6 bg">
               <h2 id="fontIncrease">Our Core Values</h2>
@@ -81,17 +82,17 @@
         <h2 id="fontIncrease">Our Team</h2>
         <div class="row mt-5">        
             <div class="col-md-4 bg bg-light text-center">
-              <img src="@/assets/pexels-zichuan-han-1719233.jpg" class="imgt">
+              <img src="@/assets/img1.jpg" class="imgt">
               <h4 class="mt-3">Chief Team Man</h4>
               <p>Chief Team Man</p>
             </div>
             <div class="col-md-4 bg bg-light text-center">
-              <img src="@/assets/pexels-roberto-vivancos-2189907.jpg" class="imgt">
+              <img src="@/assets/img2.jpg" class="imgt">
               <h4 class="mt-3">Chief Team Man</h4>
               <p>Chief Team Man</p>
             </div>
             <div class="col-md-4 bg bg-light text-center">
-              <img src="@/assets/pexels-athena-1760459.jpg" class="imgt">
+              <img src="@/assets/img3.jpg" class="imgt">
               <h4 class="mt-3">Chief Team Man</h4>
               <p>Chief Team Man</p>
             </div>
@@ -117,8 +118,9 @@
 
         <!-- Last Segment -->
         <div class="text-center lastSection">
-          <button class="btn text-warning firstBtn">DONATE <i class="fa fa-arrow-right"></i></button>
-          <button class="btn text-dark secondBtn">VOLUNTEER</button></div>
+          <button class="btn text-warning firstBtn">DONATE <span><img class="pl-3"
+                                                    src="@/assets/arrow3.png" alt="donate arrow"></span></button>
+          <router-link to="/volunteer" class="btn text-dark secondBtn">VOLUNTEER</router-link></div>
     </div>
 </template>
 
@@ -159,7 +161,7 @@ export default {
   }
   .segmentFifth{
     margin-top: 9rem;
-    /* background: url('~@/assets/Volnt2-01.jpeg'); */
+    background: url('~@/assets/img8.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -169,7 +171,7 @@ export default {
     color: #fff;
   }
   .innerImage{
-    /* background: url('~@/assets/pexels-jorge-fakhouri-filho-1854129.jpg'); */
+    background: url('~@/assets/img9.jpg');
     position: absolute;
     height: 20.8rem;
     width: 18rem;
@@ -222,7 +224,7 @@ export default {
     margin-bottom: 6rem;
   }
   .blendImage{
-    /* background:linear-gradient(rgba(15, 15, 15, 0.9), rgba(1, 1, 10, 0.7)), url('~@/assets/pexels-helena-lopes-711009.jpg'); */
+    background:linear-gradient(rgba(15, 15, 15, 0.9), rgba(1, 1, 10, 0.7)), url('~@/assets/image1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 280px;

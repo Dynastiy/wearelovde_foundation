@@ -1,23 +1,23 @@
 <template>
     <div>
         <main>
-            <section>
-        <div class="container left-hero-section hero-text-area">
+            <section class="row">
+        <div class= "left-hero-section hero-text-area col-md-9">
                     <h1 class="text-white font-weight-bold hero-text">Pack my box <br> with five dozen <br>liquor jugs</h1>
                     <p class="text-white ">Completely orchestrate best-of-breed customer service rather <br> than global benefits. Authoritatively
-                        whiteboard e-business <br>informaation with distributed opportunities.</p>
-                        <button class="btn-donate mb-2 btn mr-3">
-                            DONATE <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+                        whiteboard e-business <br>information with distributed opportunities.</p>
+                        <button class="btn btn-donate text-dark mb-2 btn mr-3">
+                            DONATE<span><img class="pl-3" src="@/assets/arrowdark.svg" alt="donate arrow"></span>  
                         </button>
-                        <router-link to="/volunteer" class="btn-volunteer mb-2 btn">
+                        <router-link to="/volunteer" class="btn btn-volunteer text-dark mb-2 btn">
                         VOLUNTEER 
                         </router-link>
                   </div>
                   
-            <div class="right-hero-section col-md-4">
-                <img src="src\assets\Ellipse 17.png" class="hero-bg-curve" style="height: 20rem; width: 20rem; margin-left: 5.3rem;">
+            <div class="right-hero-section col-md-3">
+                <div class="custom-navbar-box"> </div>
                 <div class="hero-img">
-                    <img src="src\assets\black kids 1.png" width="130%" >
+                    <img src="@/assets/black kids 1.png" width="" >
                     <div class="small-text-box d-flex">
                         <h1>"</h1>
                         <p>Charity defination is generosity and <br> helpfullness towards the needy<br> or suffering. Also aid given.</p>
@@ -31,7 +31,7 @@
         <section class="about-us" style="margin-top: 8rem !important;">
             <div class="">
                 <div class="left-side-image col-md-8">
-                    <img src="src\assets\image 8.png" width="96%">
+                    <img src="@/assets/image 8.png" width="96%">
                 </div>
                 <div class="right-side-text col-md-6" > 
                   <h2 class="text-white">About Us</h2>
@@ -42,7 +42,7 @@
                     It was popularised in the 1960s with the release of 
                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
-                  <a class="" href="#" style="color: #ffd101;">DONATE <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                  <router-link class="" href="#" style="color: #ffd101;">DONATE <span><img class="pl-3" src="@/assets/arrow3.png" alt="donate arrow"></span>  </router-link>
                 </div>
             </div>
         </section>
@@ -53,10 +53,10 @@
             <h1>"</h1>
             <p class="font-size-small text-white">Charity defination is generosity and <br> helpfullness towards the needy<br> or suffering. Also aid given.</p>
             <div class="ml-auto">
-              <button class="btn-donate mb-2 btn mr-3">
-                DONATE <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+              <button class="btn btn-donate mb-2 btn mr-3">
+                DONATE <span><img class="pl-3" src="@/assets/arrow3.png" alt="donate arrow"></span> 
             </button>
-            <router-link to="/volunteer" class="btn-volunteer mb-2 btn">
+            <router-link to="/volunteer" class="btn btn-volunteer mb-2 btn">
                VOLUNTEER 
              </router-link>
             </div>
@@ -66,14 +66,14 @@
             <h2 class="text-center text-white mt-5">Our Core Values</h2>
             <div class="row mt-3 justify-content-center">
               <div class="col-md-4 bg mr-3">
-                <img src="src\assets\Impact-focused.svg" width="10%">
+                <img src="@/assets/Impact-focused.svg" width="10%">
                 <h5 class="mb-2 mt-2">Impact Focused</h5>
                 <p class="font-size-small">t was popularised in the 1960s with the release of 
                   Letraset sheets containing Lorem Ipsum 
                   passages, and more recently with deskto</p>
               </div>
               <div class="col-md-4 bg">
-                <img src="src\assets\number 2.svg" width="20%">
+                <img src="@/assets/number 2.svg" width="20%">
                 <h5 class="mb-2 mt-2">Collaboration</h5>
                 <p class="font-size-small">t was popularised in the 1960s with the release of 
                   Letraset sheets containing Lorem Ipsum 
@@ -83,14 +83,14 @@
 
             <div class="row mt-3 justify-content-center pb-5">
               <div class="col-md-4 bg mr-3">
-                <img src="src\assets\team-fill 2.svg" width="10%">
+                <img src="@/assets/team-fill 2.svg" width="10%">
                 <h5 class="mb-2 mt-2">Group Aspirations</h5>
                 <p class="font-size-small">t was popularised in the 1960s with the release of 
                   Letraset sheets containing Lorem Ipsum 
                   passages, and more recently with deskto</p>
               </div>
               <div class="col-md-4 bg">
-                <img src="src\assets\medal-line 1.png" width="10%">
+                <img src="@/assets/medal-line 1.png" width="10%">
                 <h5 class="mb-2 mt-2">Appreciation</h5>
                 <p class="font-size-small"> t was popularised in the 1960s with the release of 
                   Letraset sheets containing Lorem Ipsum 
@@ -163,12 +163,20 @@ export default {
     
 }
 </script>
-<style scoped>
+<style  scoped>
 .row{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
-.hero-section .navbar {
+.custom-navbar-box {
+    background-color: #FEFEFE;
+    width: 300px;
+    background-image: url('~@/assets/Ellipse17.png') !important;
+    background-position-x: 8rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.hero-section {
     font-size: 0.7rem !important;
 }
 .container {
@@ -206,9 +214,9 @@ export default {
     padding: 0.8rem 3rem!important;
 }
 .hero-img {
-    position: relative;
-    right: 60%;
-    top: 25%;
+    position: absolute; 
+    right: 10%;
+     top: 13%;
 }
 .hero-bg-curve {
     position: absolute;   
@@ -219,7 +227,7 @@ export default {
     width: 10rem;
     padding: 1rem 0.3rem;
     position: absolute;
-    bottom: -20%;
+    bottom: -10%;
     left: 70%;
 }
 .small-text-box p{
@@ -235,6 +243,7 @@ export default {
 }
 .right-side-text  {
     /* background-image: `url$(require('../assets/group66.png'))`; */
+    background-image: url('~@/assets/Group 66.png');
     background-size: cover;
     position: relative;
    bottom: -15rem;
