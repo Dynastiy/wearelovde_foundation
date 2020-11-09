@@ -2,7 +2,7 @@
     <div>
         <main>
             <section class="row">
-        <div class= "left-hero-section hero-text-area col-md-9">
+        <div class= "left-hero-section container hero-text-area col-md-9">
                     <h1 class="text-white font-weight-bold hero-text">Pack my box <br> with five dozen <br>liquor jugs</h1>
                     <p class="text-white ">Completely orchestrate best-of-breed customer service rather <br> than global benefits. Authoritatively
                         whiteboard e-business <br>information with distributed opportunities.</p>
@@ -16,9 +16,9 @@
                   
             <div class="right-hero-section col-md-3">
                 <div class="custom-navbar-box"> </div>
-                <div class="hero-img">
-                    <img src="@/assets/black kids 1.png" width="" >
-                    <div class="small-text-box d-flex">
+                <div class="hero-img text-sm-center">
+                    <img class="hero-img-img" src="@/assets/black kids 1.png" width="" >
+                    <div class="small-text-box d-flex d-sm-block">
                         <h1>"</h1>
                         <p>Charity defination is generosity and <br> helpfullness towards the needy<br> or suffering. Also aid given.</p>
                     </div>
@@ -28,12 +28,12 @@
         <!--Hero Section ends here -->
 
         <!--About Us section-->
-        <section class="about-us" style="margin-top: 8rem !important;">
+        <section class="about-us container" style="margin-top: 8rem !important;">
             <div class="">
-                <div class="left-side-image col-md-8">
-                    <img src="@/assets/image 8.png" width="96%">
+                <div class="left-side-image col-md-9 col-sm-12">
+                    <!-- <img src="@/assets/image 8.png" width="97%" > -->
                 </div>
-                <div class="right-side-text col-md-6" > 
+                <div class="right-side-text col-md-6 col-sm-12"  > 
                   <h2 class="text-white">About Us</h2>
                   <p class="text-white">
                     simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
@@ -42,15 +42,15 @@
                     It was popularised in the 1960s with the release of 
                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
-                  <router-link class="" href="#" style="color: #ffd101;">DONATE <span><img class="pl-3" src="@/assets/arrow3.png" alt="donate arrow"></span>  </router-link>
+                  <router-link href="#" style="color: #ffd101;"> DONATE <span><img class="pl-3" src="@/assets/arrow3.png" alt="donate arrow"></span>  </router-link>
                 </div>
             </div>
         </section>
 
         <!--Core Values Section-->
-        <section class="core-values" style="margin-top: 23rem !important;">
-          <div class="d-flex container core-items">
-            <h1>"</h1>
+        <section class="core-values" style="margin-top: 23rem !important; padding-bottom: 5rem !important">
+          <div class="d-flex core-items container-fluid">
+            <h1 class="text-white">"</h1>
             <p class="font-size-small text-white">Charity defination is generosity and <br> helpfullness towards the needy<br> or suffering. Also aid given.</p>
             <div class="ml-auto">
               <button class="btn btn-donate mb-2 btn mr-3">
@@ -62,17 +62,17 @@
             </div>
           </div>
 
-          <div class="container">
-            <h2 class="text-center text-white mt-5">Our Core Values</h2>
-            <div class="row mt-3 justify-content-center">
-              <div class="col-md-4 bg mr-3">
+          <div class="">
+            <h2 class="text-center text-white mt-5 mb-5">Our Core Values</h2>
+            <div class="row justify-content-center mt-3">
+              <div class="col-md-3 bg mb-3 mr-3">
                 <img src="@/assets/Impact-focused.svg" width="10%">
                 <h5 class="mb-2 mt-2">Impact Focused</h5>
                 <p class="font-size-small">t was popularised in the 1960s with the release of 
                   Letraset sheets containing Lorem Ipsum 
                   passages, and more recently with deskto</p>
               </div>
-              <div class="col-md-4 bg">
+              <div class="col-md-3 mb-3 bg">
                 <img src="@/assets/number 2.svg" width="20%">
                 <h5 class="mb-2 mt-2">Collaboration</h5>
                 <p class="font-size-small">t was popularised in the 1960s with the release of 
@@ -82,14 +82,14 @@
             </div>
 
             <div class="row mt-3 justify-content-center pb-5">
-              <div class="col-md-4 bg mr-3">
+              <div class="col-md-3 bg mr-3">
                 <img src="@/assets/team-fill 2.svg" width="10%">
                 <h5 class="mb-2 mt-2">Group Aspirations</h5>
                 <p class="font-size-small">t was popularised in the 1960s with the release of 
                   Letraset sheets containing Lorem Ipsum 
                   passages, and more recently with deskto</p>
               </div>
-              <div class="col-md-4 bg">
+              <div class="col-md-3 bg">
                 <img src="@/assets/medal-line 1.png" width="10%">
                 <h5 class="mb-2 mt-2">Appreciation</h5>
                 <p class="font-size-small"> t was popularised in the 1960s with the release of 
@@ -135,18 +135,18 @@
 
 
         <!--Media Section-->
-        <section class="media container">
+        <section class="media ">
           <div class="text-center">
             <h1>Events</h1>
           </div>
           
           <div class="row justify-content-center">
-            <div class="col-md-6 media-left text-white">
+            <div class="col-md-5 media-left text-white">
               <h5 style="font-weight: bold;">Appreciation</h5>
               <p>was popularised in the 1960s with the release of 
                 Letraset sheets containing Lorem Ip</p>
             </div>
-            <div class="col-md-6 media-right">
+            <div class="col-md-5 media-right">
             </div>
           </div>
           <div class="container">
@@ -192,6 +192,13 @@ export default {
 .dropdown-item:hover {
     background-color: #ffd101;
     font-weight: bold;
+}
+.left-side-image {
+  background-image: url('~@/assets/image 8.png') !important;
+  width: 71%;
+  height: 40rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .arrowRight {
     font-size: 1rem;
@@ -247,8 +254,8 @@ export default {
     background-size: cover;
     position: relative;
    bottom: -15rem;
-    left: 53%;
-    padding: 5rem;
+    left: 70%;
+    padding: 6rem;
 }
 .core-values {
     background: #030224;
@@ -298,5 +305,68 @@ export default {
     display: block !important;
     margin-bottom: 4rem;
 }
+
+/*Media Queries*/
+@media (max-width: 991px) {
+   .hero-img {
+     position: relative;
+     margin-top: 1rem;
+   }
+   .right-hero-section {
+     display: block;
+   }
+
+   .hero-img-img {
+      width: 100%;
+     display: block;
+     margin: 0 auto;
+   }
+   .small-text-box {
+     display: block;
+   }
+   .right-side-text {
+     width: auto;
+     position: relative;
+   }
+}
+
+@media (max-width: 768px) {
+   .hero-img {
+     position: relative;
+     margin-top: 1rem;
+   }
+
+   .right-hero-section {
+     display: block;
+     position: relative;
+   }
+
+   .hero-img-img {
+     width: 100%;
+     display: block;
+     margin: 0 auto;
+   }
+   .right-side-text {
+     width: 100%;
+     position: relative;
+     top: 0;
+     left: 0;
+     padding: 1rem;
+     height: auto;
+     margin-bottom: 1rem;
+   }
+   .left-side-image {
+      width: auto;
+     position: relative;
+     top: 0;
+     left: 0;
+     margin-bottom: 1rem;
+     height: 18rem;
+   }
+   .container {
+     margin: 0 !important;
+     padding: 1rem !important;
+   }
+  }
 
 </style>
